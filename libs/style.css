@@ -2,3 +2,8 @@
     max-height : 400px;
     overflow: auto;
 }
+
+#plus {
+    font-size: 150px;
+    cursor : pointer;
+}

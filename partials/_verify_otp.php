@@ -4,7 +4,8 @@
     $errorAlert = false;
     
     if(!isset($_POST['otp'])) {
-        header("location:/techfesthub_forum/index.php");
+        $errorAlert = "OTP doesn't send. Enter a valid Email Address.";
+        header("location:/techfesthub_forum/index.php?errorAlert=".$errorAlert."");
     } 
 
     if(isset($_POST['verify'])) {

@@ -16,6 +16,7 @@
     <script src="libs/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <script src="js/script.js"></script>
+    <link rel="stylesheet" href="libs/style.css">
 </head>
 
 <body>
@@ -73,8 +74,23 @@
                             </div>';
                     }
                 }
-            ?>
 
+                if(isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
+                    echo '<div class="col-md-4">
+                            <div class="card mb-4 text-light bg-dark" style="width: 18rem; height:425px;">
+                                <div class="card-body">
+                                    <h5 class="card-title"></h5>
+                                    <p class="text-center mt-auto" id="plus">
+                                        <i class="fas fa-plus-circle" id="plusBtn" data-toggle="modal" data-target="#categoryModal"></i>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <p class="text-center font-weight-bolder" id="user">Add Category</p>
+                                </div>
+                            </div>
+                        </div>';
+                }
+            ?>
         </div>
     </div>
     <?php require('partials/_footer.php');?>

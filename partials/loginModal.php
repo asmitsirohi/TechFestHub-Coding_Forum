@@ -13,13 +13,13 @@
                 <div class="modal-body">
                     <div class="form-group">
                         <label for="loginEmail">Email address</label>
-                        <input type="email" class="form-control" id="loginEmail" name="loginEmail" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="loginEmail" name="loginEmail" aria-describedby="emailHelp" required>
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
                             else.</small>
                     </div>
                     <div class="form-group">
                         <label for="loginPassword">Password</label>
-                        <input type="password" class="form-control" id="loginPassword" name="loginPassword">
+                        <input type="password" class="form-control" id="loginPassword" name="loginPassword" required>
                     </div>
                 </div>
                 <div class="modal-footer">

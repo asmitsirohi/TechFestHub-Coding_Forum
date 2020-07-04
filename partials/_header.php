@@ -98,6 +98,7 @@
     include("loginModal.php");
     include("signupModal.php");
     include("_imageModal.php");
+    include("_categoryModal.php");
 
     if(isset($_GET['errorAlert'])) {
         $errorAlert = $_GET['errorAlert'];
